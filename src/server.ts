@@ -32,11 +32,11 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
   app.get("/filteredimage", async (req: Request, res: Response) => {
     const image_url = req.query.image_url.toString();
-    if(!image_url){
+    if (!image_url) {
       res.status(400).send('invalid url or no url'); //gives a 400 error code if there is no url or an invalid url
     }
     //To download the image, send to the client, and delete file from server
-    const filtered_image =await filterImageFromURL(image_url);
+    const filtered_image = await filterImageFromURL(image_url);
 
     res.status(200).sendFile(filtered_image, () => {
       deleteLocalFiles([filtered_image]);
