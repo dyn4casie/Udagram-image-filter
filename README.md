@@ -32,7 +32,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 Follow the process described in the course to `eb init` a new application and `eb create` a new environment to deploy your image-filter service! Don't forget you can use `eb deploy` to push changes.
 
 ##  EB deployment endpoint URL
-http://udagram-image-filter.us-east-1.elasticbeanstalk.com/
+http://udagram-image-filter.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://www.nairaland.com/attachments/15987246_screenmaster20220823213113_jpeg4c9a0f5d0abe7966a81d818e6d5d9e48
 
 ## Stand Out (Optional)
 
